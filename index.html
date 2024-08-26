@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Automata.css">
+    <link rel="stylesheet" href="nav-footer.css">
+    <title>Nier</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo1">
+            <img src="https://nierautomata-anime.com/assets/img/common/main_data_pc.png" alt="logo1">
+        </div>
+        <div class="logo2">
+            <img src="https://nierautomata-anime.com/assets/img/common/logo.svg" alt="logo2">
+        </div>
+
+
+
+        <div class="menu-escondido">
+            <a href="index.html">Home</a>
+            <a href="perso.html">Personagens </a>
+            <a href="mundo.html">Mundo </a>
+        </div>
+
+        <!-- botão estiloso -->
+        <div class="menu">
+            <button class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <div class="slide-container">
+        <div class="slides fade">
+            <img src="img2/NieR-Automata-Ver-1.1a-Segunda-Temporada-Ganha-Data-de-Estreia_waifu2x_art_noise1_scale.png"
+                style="width:100%" onclick="openImage(this)">
+        </div>
+        <div class="slides fade">
+            <img src="img2/dd.jpg" style="width:100%" onclick="openImage(this)">
+        </div>
+        <div class="slides fade">
+            <img src="img2/mundo/outro.jpg" style="width:100%" onclick="openImage(this)">
+        </div>
+        <div class="slides fade">
+            <img src="img2/mundo/parque.jpg" style="width:100%" onclick="openImage(this)">
+        </div>
+
+
+
+
+        <!-- botões antes e próximo -->
+        <a class="antes" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- exibir imagem ampliada -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+
+    <div class="info-div">
+        <h2>Origem do Jogo e Desenvolvimento</h2>
+        <div class="content">
+            <p>Nier: Automata é um jogo de ação RPG desenvolvido pela PlatinumGames e
+                publicado pela Square Enix, lançado em 2017. Ele faz parte da série Nier, que por sua vez é um spin-off
+                da série Drakengard.
+                Sob a direção criativa de Yoko Taro, o jogo combina um enredo profundo e filosófico com mecânicas de
+                combate fluídas e uma estética única.
+                Inspirado pelo sucesso dos títulos anteriores, Nier: Automata explora temas como a existência,
+                consciência e a essência da humanidade,
+                tudo ambientado em um mundo pós-apocalíptico.</p>
+            <img src="img2/drakengard.jpg" alt="Imagem do Jogo">
+        </div>
+    </div>
+
+    <div class="info-div2">
+        <h2>Nier Replicant & Gestalt</h2>
+        <div class="cont">
+            <img src="img2/replicant-gestalt-nier.avif" alt="Imagem do Jogo">
+            <p>Antes de Nier: Automata, Nier Replicant e Nier Gestalt foram lançados em 2010. Ambos os jogos
+                compartilham a mesma história central,
+                mas com diferenças de personagens principais. Replicant foi exclusivo do Japão, focando em um jovem
+                irmão em busca de salvar sua irmã,
+                enquanto Gestalt (conhecido apenas como Nier no ocidente) apresenta um pai tentando salvar sua filha.
+                Esses jogos lançaram as bases para o
+                universo rico e emocionalmente envolvente que seria explorado mais profundamente em Automata.</p>
+        </div>
+    </div>
+
+    <div class="info-div">
+        <h2>Nier: Automata</h2>
+        <div class="content">
+            <p>NieR: Automata acontece milhares de anos após os eventos de Nier,
+                em um mundo onde a humanidade foi forçada a fugir para a Lua devido a uma invasão alienígena de
+                máquinas.
+                O jogador assume o controle de androides de combate, como 2B, 9S e A2, em uma guerra desesperada para
+                retomar o planeta.
+                O jogo é aclamado por sua narrativa multifacetada, design de personagens cativante e uma trilha sonora
+                emocionante, que complementa a experiência imersiva.</p>
+            <img src="img2/Nier-Automata-Header.avif" alt="Imagem do Jogo">
+        </div>
+    </div>
+
+
+
+    <div class="info-div-banners-container">
+        <div class="info-div-banners">
+            <div class="info-section">
+                <h2>Anime de Nier:Automata V1.1a</h2>
+                <p>A segunda temporada do anime já foi lançada. Ela segue os acontecimentos da primeira temporada,
+                    onde os androides continuam sua luta para proteger a humanidade em um mundo devastado. Nesta nova
+                    fase,
+                    intitulada "Ver1.1a", a trama se aprofunda nas complexas relações entre os personagens e revela
+                    novos mistérios sobre o universo de NieR: Automata.</p>
+                <a href="https://www.anroll.net/a/zA3UeVAz7j" target="_blank">Assistir ao Anime</a>
+                <div class="video-thumbnail">
+                    <a href="https://www.youtube.com/watch?v=441v-JXm0CE&t=2s" target="_blank">
+                        <img src="img2/banners/anime.jpg" alt="Trailer do Anime">
+                        <div class="play-button"></div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="banners">
+                <h2>Outros Links</h2>
+                <div class="banner-container">
+                    <a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">
+                        <img src="img2/banners/steam.png" alt="Banner Steam">
+                    </a>
+                </div>
+                <div class="banners-section">
+                    <a href="https://www.jp.square-enix.com/nierarchive/" target="_blank">
+                        <img src="img2/banners/banergestant.png" alt="Banner Nier Gestalt">
+                    </a>
+                    <a href="https://www.jp.square-enix.com/nierreplicantv1p2/" target="_blank">
+                        <img src="img2/banners/nier replicant.png" alt="Banner Nier Replicant 2021">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-div content">
+                <h2>Sobre o site</h2>
+                <p>
+                    NierBRversion é um site feito por um fã
+                    de Nier Automata. O objetivo do site é trazer
+                    informações sobre Nier Automata e seus personagens.
+                    O WebSite é open-source!
+                </p>
+
+                <p> <a className="link" href="https://github.com/henrikort/SiteNier" target="_blank"
+                        rel="noreferrer">Veja o código fonte no GitHub!</a>
+
+                </p>
+            </div>
+
+            <div class="footer-div social">
+                <h2>Links Oficiais </h2>
+                <a href="https://www.instagram.com/nieranime/"><img src="img2/instagram.png" alt="Instagram"></a>
+
+                <a
+                    href="https://x.com/intent/post?text=アニメ『NieR%3AAutomata+Ver1.1a』2023年1月より放送開始予定。%0A+https%3A%2F%2Fnierautomata-anime.com%2F%0A+%23ニーア"><img
+                        src="img2/social-media.png" alt="Twitter"></a>
+                </a>
+
+
+
+                <div>
+                    <a href="https://www.jp.square-enix.com/nierautomata/" target="_blank" class="l-footerlink">
+                        <span class="highlighted">NieR:Automata</span>
+                        <span class="smaller">Official Web Site</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; NierBRversion não é um WebSite oficial de Nier automata.</p>
+        </div>
+    </footer>
+    <script src="Automata.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
