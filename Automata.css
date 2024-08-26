@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esconde qualquer overflow horizontal */
+    background-color: black;
+}
+/* slides */
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; 
+    margin: 0px;
+    background-color: black;
+}
+.slides{
+    display: none;
+}
+
+.slides img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+
+
+
+
+/* efeito no slide */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+}
+
+/* botao antes e proximo e fechar o modal */
+.antes, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.antes:hover, .proximo:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 9px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 900px;
+}
+
+
+.close {
+    position: absolute;
+    top: 90px;
+    right: 150px;
+    color: #f1f1f1;
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* imagem a direita texto a esquerda */
+
+.info-div {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    
+    
+}
+
+.info-div .content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+.info-div h2{
+    font-size: 60px;
+    font-family: "Lora", sans-serif;
+}
+
+.info-div p {
+    flex: 1; 
+    margin: 0;
+    font-size: 27px;
+    line-height: 2.4;
+}
+
+.info-div img {
+    max-width: 39%; /* ajusta tamanho da imagem */
+    height: auto;
+}
+
+/* colocando imagem a esquerda e texto a direita */
+.info-div2 {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.info-div2 .cont {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* coloca texto a direita imagem a esquerda */
+    gap: 20px; /* epacamento entre texto em imagem */
+}
+
+.info-div2 h2 {
+    font-size: 60px;
+    text-align: right; 
+    margin-right: 200px;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.info-div2 p {
+    flex: 1; 
+    margin: 0;
+    font-size: 27px;
+    line-height: 2.4;
+}
+
+.info-div2 img {
+    max-width: 39%; 
+    height: auto;
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.info-div img, .info-div2 img {
+    max-width: 45%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.info-div-banners-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Define a altura da div para cobrir a altura da viewport */
+    overflow: hidden;
+}
+
+.info-div-banners-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img2/NIERA_WORLD_CityRuins_01.jpg') center/cover no-repeat;
+    filter: brightness(50%); /* Ajuste o valor para mais ou menos escurecimento */
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+.info-div-banners {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    position: relative; /* Necessário para que o ::before funcione corretamente */
+    padding: 20px;
+}
+
+.info-section {
+    flex: 1;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.info-section h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    line-height: 2.4;
+
+}
+
+.info-section a {
+    color: #ffffff; /* Cor prata/platinada */
+    text-decoration: underline;
+    font-size: 24px;
+    display: block; /* Faz o link ocupar toda a largura disponível */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    margin-top: 15px; /* Espaçamento acima do link */
+}
+
+
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    max-width: 480px; /* Ajuste conforme necessário */
+    margin-top: 20px;
+    height: 270px; /* Defina a altura desejada para a div */
+    margin-left: 240px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%; /* Ajuste a altura para preencher a div */
+    object-fit: cover; /* Faz com que a imagem cubra a div sem distorção */
+    filter: brightness(50%); /* Escurece a imagem por padrão */
+    transition: filter 0.3s ease; /* Suaviza a transição do efeito hover */
+}
+
+.video-thumbnail img:hover {
+    filter: brightness(100%); /* Clareia a imagem ao passar o mouse */
+}
+
+.video-thumbnail .play-button {
+    position: absolute; /* Mudou de relative para absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o botão de play */
+    width: 80px;
+    height: 80px;
+    background: url('img2/banners/botao-play.png') no-repeat center center;
+    background-size: contain; /* Garante que a imagem do botão não ultrapasse os limites */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2.0s ease; /* Adiciona uma transição suave para a visibilidade */
+}
+
+.video-thumbnail:hover .play-button {
+    opacity: 1; 
+}
+
+
+
+
+
+
+
+
+
+
+.banners {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    gap: 84px;
+}
+
+.banner-container {
+    background-color: #000; /* Fundo preto */
+    padding: 10px; /* Espaçamento interno */
+    height: 84px;
+    width: 330px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border: 2px solid #e8e8e8ea;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+   
+    
+    
+}
+.banner-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.banner-container:hover,
+.banners-section > a:hover {
+    transform: scale(1.05); /* Aumenta o banner ao passar o mouse */
+}
+
+.banners-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px; /* Ajuste o valor conforme necessário */
+    gap: 40px;
+}
+
+.banners h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.banners-section img {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    max-width: 360px;
+
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.banners-section img:hover {
+    transform: scale(1.05);
+}
