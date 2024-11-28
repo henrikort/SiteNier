@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esconde qualquer overflow horizontal */
+    background-color: black;
+}
+
+.info-div {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    
+    
+}
+
+.info-div .content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+.info-div h2{
+    font-size: 60px;
+    margin-left: 30%;
+    font-family: "Lora", sans-serif;
+}
+
+.info-div p {
+    flex: 1;
+    margin-left: 350px; /* Aumenta a margem para mover o texto mais para a direita */
+    font-size: 24px;
+    line-height: 2.3;
+    max-width: 30%; /* Define a largura máxima para o parágrafo */
+}
+
+.info-div img {
+    max-width: 39%; /* Ajusta tamanho da imagem */
+    height: auto;
+    margin-right: 9%;
+    transition: transform 0.6s ease-in-out; /* Transição suave ao passar o mouse */
+
+}
+
+
+
+
+
+
+
+
+
+
+.info-div2 {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.info-div2 .cont {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* coloca texto a direita imagem a esquerda */
+    gap: 20px; /* epacamento entre texto em imagem */
+}
+
+.info-div2 h2 {
+    font-size: 60px;
+    text-align: right; 
+    margin-right: 30%;
+    font-family: "Lora", sans-serif;
+}
+
+.info-div2 p {
+    flex: 1;
+    margin-right: 300px; /* Aumenta a margem para mover o texto mais para a direita */
+    font-size: 24px;
+    line-height: 2.3;
+    max-width: 30%; /* Define a largura máxima para o parágrafo */
+}
+
+.info-div2 img {
+    max-width: 39%; /* Ajusta tamanho da imagem */
+    height: auto;
+    margin-left: 15%;
+    transition: transform 0.6s ease-in-out; /* Transição suave ao passar o mouse */
+
+}
+
+#pods {
+    margin-left: 15%; /* Ajuste a margem para mover o título para a esquerda */
+    text-align: left; /* Mantém o alinhamento do texto à esquerda */
+}
+
+#comander {
+    margin-left: 21%; /* Ajuste a margem para mover o título para a esquerda */
+    text-align: left; /* Mantém o alinhamento do texto à esquerda */
+}
+#adao{
+    margin-left: 21%; /* Ajuste a margem para mover o título para a esquerda */
+    text-align: left; /* Mantém o alinhamento do texto à esquerda */
+}
+
+
+.info-div img:hover,
+.info-div2 img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+[id^="fundo-"] {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(73, 50, 50, 0.116); 
+    background-blend-mode: lighten;
+}
+
+
+#fundo-1 {
+    background-image: url('img2/personagens/fundob2.png');
+}
+
+#fundo-2 {
+    background-image: url('img2/personagens/id02_bg_pc.png');
+    background-position: 40% center;
+}
+
+#fundo-3 {
+    background-image: url('img2/personagens/id04_bg_pc.png');
+    background-position: 50% 6%;
+}
+
+#fundo-4 {
+    background-image: url('img2/personagens/id03_bg_pc.png');
+}
+
+#fundo-5 {
+    background-image: url('img2/personagens/id05_bg_pc.png');
+}
+
+#fundo-6 {
+    background-image: url('img2/personagens/id08_bg_pc.png');
+}
+
+#fundo-7 {
+    background-image: url('img2/personagens/id07_bg_pc.png');
+}
+
+
